@@ -27,4 +27,16 @@ cp ../conf/000-default.conf /etc/apache2/sites-available
 
 # Reiniciamos el servicio (apache)
 
-systemctl restar apache2
+systemctl restart  apache2
+
+#Copiamos el archivo de prueba de php 
+
+cp ../php/index.php /var/www/html 
+
+# Modificamos el propietario y el grupo del directorio /var/www/htlm
+
+chown -R www-data:www-data /var/www/hmtl 
+
+
+
+

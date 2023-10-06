@@ -93,7 +93,7 @@ Ejemplo en el archivo /etc/apache2/mods-available/dir.conf:
 
 DirectoryIndex index.php index.html index.cgi index.pl index.php index.xhtml index.htm
 Ejemplo en un host virtual:
-
+``
 <VirtualHost *:80>
     #ServerName www.example.com
     ServerAdmin webmaster@localhost
@@ -104,7 +104,7 @@ Ejemplo en un host virtual:
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
+`
 
 ## CURL
 
@@ -127,26 +127,29 @@ Ejemplo en un host virtual:
 
 ## Como acceder a mysql.
 
-- Hacemos uso del comando *_mysql -u root_*
+- Hacemos uso del comando `*_mysql -u root_*`
 
 # INSTALAR PHP.
 
 - Comando de instalación: sudo apt install php libapache2-mod-php php-mysql
 
-- Todos los archivos de php empiezan por <?php
+- Todos los archivos de php empiezan por `<?php`
 
 - Ponemos esto phpinfo(): siempre.
 
 - Podemos exportar la siguiente sintaxis: 
-ServerSignature Off     
-ServerTokens Prod
+ ´
+`ServerSignature Off     
+ServerTokens Prod`
 
-<VirtualHost *:80>
+ `
+ <VirtualHost *:80>
     #Servername www.example.com
     DocumentRoot /var/www/html
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+</VirtualHost> 
+`
 
 
 
