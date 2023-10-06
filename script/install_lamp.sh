@@ -1,7 +1,7 @@
 #!/bin/bash
-set -x 
-#Esto muestra todos los comandos que se van ejecutando
 
+#Esto muestra todos los comandos que se van ejecutando
+set -x 
 #Actualizamos los repositorios
 apt update
 
@@ -12,3 +12,4 @@ apt upgrade -y
 # Instalamos el servidor web apache
 
 apt install apache2 -y
+
