@@ -107,6 +107,7 @@ Ejemplo en un host virtual:
 `
 
 ## CURL
+- Peticiones web via terminal.
 
 - Te proporciona una pagina web a comandos. Es decir tienes que poner curl y la pagina http con su ruta para hacer uso y te saldrá el contenido de la página
 
@@ -152,4 +153,14 @@ ServerTokens Prod`
 `
 
 
+## .ENV
 
+- Es un archivo que se utiliza para el desarrollo de software. En los proyectos suele guardarse como archivos ocultos. El archivo .env no suele meterese en los repositorios. Puede almacenar una serie de variables.
+
+- .Env hace referencia a entorno. 
+
+## RM
+
+- Rmdir me sirve para eliminar directorios. Rmdir * me sirve para eliminar todos los directorios
+
+- Rm * me sirve para eliminar todos los archivos dentro de un directorio.
