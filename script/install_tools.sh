@@ -63,3 +63,16 @@ mkdir -p /var/www/html/stats
 #Ejecutamos GoAcces en segundo plano
 
 sudo goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html --daemonize
+
+# Protegemos el directorio, le ponemos control de acceso con autentificación básica.
+#Creamoe el archivo .htpasswd
+
+sudo htpasswd -bc /etc/apache2/.htpasswd $STATS_USERNAME $STATS_PASSWORD
+
+#Copiamos el archivo de configuración de Apache con la configuracino del acceso al directorio.
+
+cp ../conf/000-default-stats.conf /etc/apache2/sites-available/000-default.conf
+
+#Reiniciamos el servicio de apache
+
+sudo systemctl restart apache2
